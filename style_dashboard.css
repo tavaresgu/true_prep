@@ -1,8 +1,13 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
 /* Reset básico */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #919191;
 }
 
 .menu {
@@ -13,7 +18,7 @@ body {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: #007bff;
+    background-color: #34495e;
     border: none;
     color: #fff;
     padding: 10px;
@@ -24,19 +29,19 @@ body {
 .sidebar {
     position: fixed;
     top: 0;
-    left: -250px;
+    left: -250px; /* Posição inicial fora da tela */
     width: 250px;
     height: 100%;
     background-color: #2c3e50;
     color: #ecf0f1;
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.3s; /* Suavidade na animação */
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 1000;
 }
 
 .sidebar.open {
-    left: 0;
+    left: 0; /* Move para dentro da tela quando aberta */
 }
 
 .menu-header {
@@ -47,7 +52,6 @@ body {
 .menu-image {
     width: 100px;
     height: 100px;
-   
 }
 
 .menu-items {
@@ -67,7 +71,58 @@ body {
     background-color: #16a085;
 }
 
+/* Estilo para o conteúdo */
 .content {
-    margin-left: 10px;
+    display: flex; /* Ativa o flexbox */
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: flex-start; /* Alinha no topo verticalmente */
+    height: 100vh; /* Ocupa a altura total da janela */
+    text-align: center; /* Centraliza o texto dentro dos elementos */
     padding: 20px;
+    margin: 0; /* Remove margens externas */
+}
+
+.content h1,
+.content p {
+    color: white;
+    margin: 10px 0; /* Adiciona espaçamento entre o título e o parágrafo */
+}
+
+.content h1{
+    font-size: 55px;
+}
+
+/* Estilo para o contêiner das caixas */
+.info-boxes {
+    display: flex;
+    justify-content: center; /* Centraliza as caixas horizontalmente */
+    gap: 20px; /* Espaçamento entre as caixas */
+    margin-top: 20px; /* Espaço acima das caixas */
+}
+
+/* Estilo para cada caixa */
+.box {
+    background-color: #34495e;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px; /* Define largura fixa */
+    text-align: center; /* Centraliza o conteúdo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.box:hover {
+    transform: translateY(-5px); /* Elevação ao passar o mouse */
+}
+
+.box h3 {
+    margin: 0 0 10px; /* Espaçamento entre o título e o número */
+}
+
+.box p {
+    font-size: 24px; /* Tamanho do número */
+    margin: 0;
+    font-weight: bold;
 }
