@@ -1,4 +1,6 @@
-
+* {
+    font-family: 'Poppins', sans-serif;
+}
 
 /* Reset básico */
 body, h1, p, a, label {
