@@ -1,3 +1,7 @@
+:root{
+    --cor-fundo: linear-gradient(90deg, #000, #202020, #353535)
+}
+
 /* Reset básico */
 body, h1, p, a, label {
     margin: 0;
@@ -11,23 +15,25 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background: var(--cor-fundo);
+    
 }
 
 /* Container principal */
 .container {
     width: 100%;
     max-width: 400px;
-    background: #fff;
+    background: #000000;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
+
 }
 
 /* Logo no canto superior esquerdo */
 .header {
-    text-align: left;
+    text-align: center;
 }
 
 .logo {
@@ -35,11 +41,16 @@ body {
     height: auto;
 }
 
+#logo_img{
+    width: 150px;
+}
+
 /* Estilo da caixa de login */
 .login-box h1 {
     font-size: 24px;
-    color: #333;
+    color: #fff;
     margin-bottom: 20px;
+
 }
 
 .input-group {
@@ -50,7 +61,7 @@ body {
 .input-group label {
     display: block;
     margin-bottom: 5px;
-    color: #555;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -58,9 +69,10 @@ body {
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    border: none;
+    border-radius: 6px;
     box-sizing: border-box;
+    outline: none;
 }
 
 .btn {
@@ -68,15 +80,15 @@ body {
     padding: 10px;
     font-size: 16px;
     color: #fff;
-    background: #007BFF;
+    background: #0072ec;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition:  0.3s;
 }
 
 .btn:hover {
-    background: #0056b3;
+    background: #004b9b;
 }
 
 /* Registro */
@@ -86,11 +98,11 @@ body {
 
 .register p {
     font-size: 14px;
-    color: #555;
+    color: #ffffff;
 }
 
 .register a {
-    color: #007BFF;
+    color: #006ee4;
     text-decoration: none;
 }
 
