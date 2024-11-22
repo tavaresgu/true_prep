@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- GOOGLE FONTS-->
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- FIM GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <!-- FIM GOOGLE FONTS -->
 
     <title>Dashboard</title>
     <link rel="stylesheet" href="style_dashboard.css">
@@ -31,9 +31,8 @@
         </div>
     </div>
     <div class="content">
-        <h1>Dashboard</h1>
+        <h1>TRUE PREP | Dashboard</h1>
 
-        
         <!-- Caixas de informações -->
         <div class="info-boxes">
             <div class="box">
@@ -50,6 +49,52 @@
                 <img src="images/box.png" alt="" id="icone-dash">
                 <h3>Caixas</h3>
                 <p>30</p>
+            </div>
+        </div>
+
+        <!-- Novas caixas -->
+        <div class="form-boxes">
+            <!-- Primeira caixa: Cadastrar Produto -->
+            <div class="box_form">
+                <h3>Cadastrar Produto</h3>
+                <form>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite o nome">
+
+                    <label for="asin">ASIN:</label>
+                    <input type="text" id="asin" name="asin" placeholder="Digite o ASIN">
+                    
+                    <label for="peso">Peso:</label>
+                    <input type="text" id="peso" name="peso" placeholder="Digite o peso">
+                    
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" id="quantidade" name="quantidade" placeholder="Digite a quantidade">
+                    
+                    <label for="origem">Origem:</label>
+                    <input type="text" id="origem" name="origem" placeholder="Digite a origem">
+                    
+                    <label for="imagemProduto">Imagem:</label>
+                    <input type="file" id="imagemProduto" name="imagemProduto">
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+            <!-- Segunda caixa: Criar Envio -->
+            <div class="box_form">
+                <h3>Criar Envio</h3>
+                <form>
+                    <label for="asinEnvio">ASIN:</label>
+                    <input type="text" id="asinEnvio" name="asinEnvio" placeholder="Digite o ASIN">
+                    
+                    <label for="quantidadeEnvio">Quantidade:</label>
+                    <input type="number" id="quantidadeEnvio" name="quantidadeEnvio" placeholder="Digite a quantidade">
+                    
+                    <label for="imagemEnvio">Imagem:</label>
+                    <input type="file" id="imagemEnvio" name="imagemEnvio">
+                    
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
         </div>
     </div>
